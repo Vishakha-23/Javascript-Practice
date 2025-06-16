@@ -18,3 +18,6 @@ console.log(name1.includes(5))
 console.log(name1.startsWith(5))
 console.log(name1.endsWith(5))
 
+// extract amount out of this string
+let str ='Please give rs 1000';
+ 
