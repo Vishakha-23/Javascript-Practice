@@ -28,6 +28,32 @@ let arr2 = ['a', 'dee', 'bee', 'see'];
 let newArr = arr.concat(arr2);
 console.log(newArr)
 
-console.log(arr2.sort());
+console.log(arr2.sort());//sorts array alphabetically
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
