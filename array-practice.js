@@ -30,6 +30,12 @@ console.log(newArr)
 
 console.log(arr2.sort());//sorts array alphabetically
 
+let arr1 = [3,8,4,10,6];
+//reduce method
+let red = (a,b)=>{
+    return a+b;
+}
+ console.log(arr1.reduce(red));
 
 
 
