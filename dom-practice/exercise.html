@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        display: flex;
+        gap: 40px;
+        height: 30px;
+        width: 100vw;
+        background-color: rgb(192, 192, 18);
+    }
+
+    .box {
+        height: 20px;
+        width: 20px;
+        border: 1px solid black;
+        margin: 2px;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 5px;
+
+    }
+
+    li {
+        background-color: white;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>home</li>
+            <li>contact</li>
+            <li>about us</li>
+        </ul>
+    </nav>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+    </table>
+
+
+    <script>
+        let nav = document.querySelector('.navbar');
+        // nav.firstElementChild.style.backgroundColor = 'blue';
+
+        //to change first and last child background color to green
+        document.querySelector('.boxes').firstElementChild.style.backgroundColor = 'green';
+        document.querySelector('.boxes').lastElementChild.style.backgroundColor = 'green';
+
+        //to change background of all <li> tag to cyan
+
+        const lis = document.getElementsByTagName('li');
+        for (let j = 0; j < lis.length; j++) {
+            lis[j].style.backgroundColor = 'cyan';
+        }
+
+    </script>
+
+</body>
+
+</html>

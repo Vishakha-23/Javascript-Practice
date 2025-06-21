@@ -1,0 +1,25 @@
+textarea {
+    width: 400px;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    gap: 20px 40px;
+
+}
+
+.listStyle {
+    width: 150px;
+    height: 100px;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 2px;
+    font-size: 10px;
+    color: antiquewhite;
+    overflow: hidden;
+}
