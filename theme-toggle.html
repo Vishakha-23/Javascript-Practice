@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .dark-mode {
+        background-color: rgb(2, 17, 1);
+        color: antiquewhite;
+    }
+</style>
+
+<body>
+    
+    <button id="btn">Dark Mode</button>
+    <button id="random">random color</button>
+    <p>hello i am content.</p>
+
+    <script>
+
+        let button = document.getElementById('btn');
+        let random = document.getElementById('random');
+
+        //to toggle between light and dark mode
+        button.addEventListener('click', (e) => {
+            if (button.innerText == 'Dark Mode') {
+                document.body.style.backgroundColor = 'black';
+                document.body.style.color = 'white';
+                button.innerText = 'Light Mode';
+            }
+            else {
+                document.body.style.backgroundColor = 'white';
+                document.body.style.color = 'black';
+                button.innerText = 'Dark Mode';
+            }
+        })
+
+        //to generate random color
+        function getRandomColor() {
+            let str = 'abcdef0123456789';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += str[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        //button changes background color randomly
+        random.addEventListener('click', (e) => {
+            document.body.style.backgroundColor = getRandomColor();
+        })
+    </script>
+</body>
+
+</html>
