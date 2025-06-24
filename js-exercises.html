@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #initial{
+        background-color: rgb(167, 241, 241);
+    }
+</style>
+<body>
+    <div id="initial"></div>
+
+    <script>
+    let elm = document.getElementById('initial');
+    elm.insertAdjacentHTML('beforebegin', '<p>Heelooo</p>')
+    elm.insertAdjacentHTML('afterbegin', '<p>i m inserted after begin</p>')
+    elm.insertAdjacentHTML('beforeend', '<p>i m inserted before end</p>')
+    elm.insertAdjacentHTML('afterend', '<p>Bye</p>')
+
+   
+    </script>
+</body>
+</html>
