@@ -19,6 +19,7 @@ let message ='';
   
     div.innerHTML = `${message}<span class="dots"></span>`;
     document.querySelector('.box').appendChild(div);
+     document.querySelector('.box').scrollTop = document.querySelector('.box').scrollHeight;
 }
 
 setInterval(write,1000);
