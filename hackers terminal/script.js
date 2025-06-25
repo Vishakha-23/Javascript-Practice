@@ -4,22 +4,21 @@ function write() {
 
     let div = document.createElement('div');
     let x = Math.floor(Math.random() * 7);
-
+let message ='';
     if (x > 2 && x < 4) {
-        div.innerText = 'Initializing'
+        message = 'Initializing'
     } else if (x > 3 && x < 5) {
-        div.innerText = 'Reading your Files'
+        message = 'Reading your Files'
     } else if (x > 5 && x < 7) {
-        div.innerText = 'Password files Detected '
+        message = 'Password files Detected '
     } else if (x >= 1 && x < 2) {
-        div.innerText = 'cleaning up '
+        message = 'cleaning up '
     } else {
-        div.innerText = 'Sending all passwords and personal files to server '
+        message = 'Sending all passwords and personal files to server '
     }
-
+  
+    div.innerHTML = `${message}<span class="dots"></span>`;
     document.querySelector('.box').appendChild(div);
 }
 
-setInterval(() => {
-    write();
-}, 1000);
+setInterval(write,1000);
