@@ -1,0 +1,22 @@
+#bookMarks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#textarea{
+    width: 250px;
+}
+
+#button{
+    background-color: rgb(124, 212, 232);
+    color: rgb(83, 5, 5);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(77, 2, 2);
+    font-size: 15px;
+}
