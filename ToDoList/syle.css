@@ -1,0 +1,19 @@
+
+.que{
+    padding: 4px;
+    font-size: 20px;
+    background-color: rgb(171, 169, 169);
+}
+
+.ans{
+    padding: 4px;
+    font-size: 18px;
+    background-color: rgb(202, 201, 201);
+    display: none;
+}
+/* .active{
+  display: block;
+} */
+ .active .ans {
+  display: block;
+}

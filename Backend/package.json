@@ -1,0 +1,16 @@
+{
+  "name": "file_back",
+  "version": "1.0.0",
+  "description": "this is first backend file",
+  "main": "file.js",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "first",
+    "file"
+  ],
+  "author": "vishakha",
+  "license": "ISC"
+}

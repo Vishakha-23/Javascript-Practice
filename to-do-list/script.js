@@ -8,17 +8,17 @@ function getRandomColor() {
 }
 
 
-function add() {
-    let input = document.getElementById('textarea').value;
+let add_button = document.getElementById("add");
 
-    if(input.trim()!== ""){
-        let newNote = document.createElement('li');
-        newNote.classList.add("listStyle");
-        
-        newNote.textContent = input;
-        newNote.style.backgroundColor = getRandomColor();
-        newNote.style.border = getRandomColor();
-        document.getElementById('todolist').append(newNote)
-        document.getElementById('textarea').value = "";
-    }
-}
+add_button.addEventListener("click", ()=>{
+let div=  document.createElement('div');
+   let note = document.getElementById("note").value;
+   if(note.trim() === "") return;
+   div.innerHTML = `<p>${note}</p>`;
+  
+   div.classList.add("card-body", "mt-4")
+     
+   
+document.getElementById("cardContainer").append(div);
+note = "";
+})
